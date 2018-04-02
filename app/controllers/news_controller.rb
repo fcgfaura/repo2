@@ -35,7 +35,9 @@ class NewsController < ApplicationController
 
   # DELETE /news/1
   def destroy
+    @mostrar = @news
     @news.destroy
+    render json: @news
   end
 
   private
