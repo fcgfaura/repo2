@@ -4,7 +4,6 @@ class NewsController < ApplicationController
   # GET /news
   def index
     @news = New.all
-
     render json: @news
   end
 
